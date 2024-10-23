@@ -1,8 +1,4 @@
-# Jrebel License Server for Java
+使用说明（Instructions for use）
 
-A license server for Jrebel & JetBrains products, it also support JRebel for Android and XRebel.
+https://mp.weixin.qq.com/s/8neT1wEqxI_bbcDFWWF21Q
 
-### latest
-````shell
-jrebel 2023.4.0 +
-````
