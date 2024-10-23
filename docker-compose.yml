@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  springboot:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: lianshufeng/jrebel
+    environment:
+      licenseUrl: 42.193.18.168:8088
+    ports:
+      - "8080:8080"
+    working_dir: /opt/jar
+    container_name: jrebel
+    restart: always
+   

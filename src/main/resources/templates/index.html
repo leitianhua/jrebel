@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Jrebel 激活服务</title>
+    <meta name="description" content="支持最新的jrebel激活， 兼容2023以后的版本"/>
+    <meta name="keywords" content="jrebel 2023+ , jrebel 2023.4.0 "/>
+<body>
+
+
+<h1>Jrebel License Server! (兼容 2023.4.0 +)</h1>
+<p>使用教程: <a href="https://mp.weixin.qq.com/s/8neT1wEqxI_bbcDFWWF21Q" target="_blank">点击这里</a></p>
+
+<hr/>
+
+
+<p>
+    JRebel 激活地址: <span id="span" style='color:red' th:text="${protocol} + ${licenseUrl}+'/'+${uuid}"></span>
+</p>
+<p>
+    JRebel 激活邮箱: <span id="span" style='color:red' th:text="${mail}"></span>
+</p>
+
+<hr/>
+<p>关注公众号【鲸蓝小】，支持一下哦。</p>
+<img src="/wechat.jpg" class="img-fluid rounded" alt="微信公众号">
+
+<p>QQ交流群 在这里！</p>
+<img src="/qq.jpg" class="img-fluid rounded" alt="QQ交流群">
+
+
+</body>
+
+
+</head>
+</html>
