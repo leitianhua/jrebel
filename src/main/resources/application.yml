@@ -1,19 +1,41 @@
-server:
-  port: 8080
-
-
 spring:
-  thymeleaf:
-    suffix: .html
-    mode: HTML
-    prefix: classpath:/templates/
-    cache: false
-    encoding: UTF-8
+  application:
+    name: jrebel-license-server
+  freemarker:
+    enabled: true
+    prefix: /
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+  mvc:
+    static-path-pattern: /**
+  main:
+    allow-bean-definition-overriding: true
 
-
-#调试或者输出日志
 logging:
+  level:
+    org.springframework.web: INFO
+    com.keainia.jrebel: DEBUG
   file:
-    name: logs/jrebel.log
+    name: ${user.home}/logs/jrebel.log
+  logback:
+    rollingpolicy:
+      max-history: 7
+      max-file-size: 10MB
 
-#debug: true
+server:
+  port: 9090
+
+jrebel:
+
+  social:
+    - name: jrebel & xrebel 安装及使用教程
+      url: https://mp.weixin.qq.com/s/8neT1wEqxI_bbcDFWWF21Q
+
+    - name: JetBrains全家桶永久激活(IDEA、PyCharm、Webstorm等)
+      url: https://faka.jizhi.me
+
+    - name: 百万网盘资源（短剧、动漫、音乐、小说等）
+      url: https://ks.jizhi.me
+
+    - name: 更多资源
+      url: https://link3.cc/keainia

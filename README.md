@@ -1,4 +1,5 @@
-使用说明（Instructions for use）
+# Jrebel License Server
 
-https://mp.weixin.qq.com/s/8neT1wEqxI_bbcDFWWF21Q
+一个基于spring boot的jrebel激活服务。  
+
 
